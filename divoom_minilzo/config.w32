@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("divoom_minilzo", "for divoom_minilzo support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("divoom_minilzo", "enable divoom_minilzo support", "no");
+
+if (PHP_DIVOOM_MINILZO != "no") {
+	EXTENSION("divoom_minilzo", "divoom_minilzo.c");
+}
+
